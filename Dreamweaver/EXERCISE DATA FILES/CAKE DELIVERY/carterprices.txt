@@ -1,0 +1,4 @@
+Item	Price
+cake with buttercream	$12.00
+cake with chocolate	$14.00
+raspberry filling	$4.00

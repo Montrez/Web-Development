@@ -1,0 +1,7 @@
+Prefix	Symbol	multiply the base unit by
+kilo	k	1000
+hecto	h	100
+deca	da	10
+deci	d	0.1
+centi	c	0.01
+milli	m	0.001

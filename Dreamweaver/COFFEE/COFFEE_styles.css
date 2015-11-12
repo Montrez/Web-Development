@@ -1,0 +1,15 @@
+p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+}
+em {
+	font-style: italic;
+}
+.footer {
+	font-family: Verdana, Arial, "l Helvetica", sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	text-align: center;
+}

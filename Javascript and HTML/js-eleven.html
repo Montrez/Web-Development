@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Activity #15</TITLE>
+<SCRIPT>
+   function validateText(pizzaForm)
+   {
+     if(pizzaForm.name.value=="")
+    {
+     return false;
+    }
+    if(pizzaForm.address.value=="")
+    {
+     return false;
+    }
+     if(pizzaForm.city.value=="")
+    {
+     return false;
+    }
+     if(pizzaForm.phone.value=="")
+    {
+	return false;
+    }
+     return true;
+    }
+    function validateRadio(pizzaForm)
+    { 
+     if(pizzaForm.size[0].checked==true)
+    {
+     return true;
+    } 
+    if(pizzaForm.size[1].checked==true)
+    {
+     return true;
+    }
+    if(pizzaForm.size[2].checked==true)
+    {
+     return true;
+    }
+    return false;
+  }
+   function doSubmit(pizzaForm)
+   {
+    if(validateText(pizzaForm)==false)
+   { 
+    alert("Required data missing in Step 2");
+    return;
+    }
+    alert("Your pizza order has been submitted!");
+    return;
+}
+
+    
+function doClear(pizzaForm)
+{
+    pizzaForm.name.value = "";
+    pizzaForm.address.value = "";
+    pizzaForm.city.value = "";
+    pizzaForm.state.value = "";
+    pizzaForm.zip.value = "";
+    pizzaForm.phone.value = "";
+    pizzaForm.size[0].checked = false;
+    pizzaForm.size[1].checked = false;
+    pizzaForm.size[2].checked = false;
+    pizzaForm.topping[0].checked = false; 
+    pizzaForm.topping[1].checked = false;
+    pizzaForm.topping[2].checked = false;
+    pizzaForm.topping[3].checked = false;
+    pizzaForm.topping[4].checked = false;
+    pizzaForm.topping[5].checked = false;
+    return;
+  }
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>The JavaScript Pizza Palor</H1>
+<FORM NAME="pizzaForm">
+<BR>'
+<H4>Step 1:Enter your name,address, and phone number:</H4>
+<FONT FACE="COURIER">
+Name: &nbsp;&nbsp;<INPUT TYPE="TEXT"SIZE=50 NAME="name"><BR>
+Address:<INPUT TYPE="TEXT"SIZE=50 NAME="address"><BR>
+City: &nbsp;&nbsp;&nbsp;<INPUT TYPE="TEXT"SIZE=16 NAME="city">
+State:<INPUT TYPE="TEXT"SIZE=4 NAME="state">
+Zip:<INPUT TYPE="TEXT"SIZE=8 NAME="zip"><BR>
+Phone: &nbsp;&nbsp;<INPUT TYPE="TEXT"SIZE=50 NAME="phone"><BR>
+</FONT>
+<BR>
+<BR>
+<H4>Step 2:Select the size of pizza you want:</H4>
+<FONT FACE="COURIER">
+<INPUT TYPE="RADIO"NAME="size">Small
+<INPUT TYPE="RADIO"NAME="size">Medium
+<INPUT TYPE="RADIO"NAME="size">Large<BR>
+</FONT>
+<BR>
+<BR>
+<H4>Step 3:Select the pizza toppings you want:</H4>
+<FONT FACE="COURIER">
+<INPUT TYPE="CHECKBOX"NAME="topping">Pepperoni
+<INPUT TYPE="CHECKBOX"NAME="topping">Canadian Bacon
+<INPUT TYPE="CHECKBOX"NAME="topping">Sausage<BR>
+<INPUT TYPE="CHECKBOX"NAME="topping">Mushrooms
+<INPUT TYPE="CHECKBOX"NAME="topping">Pineapple
+<INPUT TYPE="CHECKBOX"NAME="topping">Black Olives<BR>
+</FONT>
+<BR>
+<BR>
+<INPUT TYPE="BUTTON" VALUE="Submit Order" onClick="doSubmit(pizzaForm);">
+<INPUT TYPE="BUTTON" VALUE="Clear Entries" onClick="doClear(pizzaForm);">
+</FORM>
+</BODY>
+</HTML>

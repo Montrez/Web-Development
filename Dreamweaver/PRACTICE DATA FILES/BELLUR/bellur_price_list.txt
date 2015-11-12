@@ -1,0 +1,4 @@
+Product	Price Each
+Utility Spoon	$12.00 
+Perforated Spoon	$18.00 
+Spatula	$20.00 

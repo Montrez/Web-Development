@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Activity #11</TITLE>
+<SCRIPT>
+   function doSubmit(pizzaForm)
+   {
+    alert("Your pizza order has been submitted!");
+    return;
+   }
+    
+    fuction doClear(pizzaForm)
+   {
+    pizzaForm.name.value="";
+    pizzaForm.address.value="";
+    pizzaForm.city.value="";
+    pizzaForm.state.value="";
+    pizzaForm.zip.value="";
+    pizzaForm.phone.value="";
+    pizzaForm.size[0].checked=false;
+    pizzaForm.size[1].checked=false;
+    pizzaForm.size[2].checked=false;
+    pizzaForm.topping[0].checked=false; 
+    pizzaForm.topping[1].checked=false;
+    pizzaForm.topping[2].checked=false;
+    pizzaForm.topping[3].checked=false;
+    pizzaForm.topping[4].checked=false;
+    pizzaForm.topping[5].checked=false;
+    return
+  }

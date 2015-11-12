@@ -1,0 +1,53 @@
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: normal;
+}
+body {
+	background-color: #FFFFCC;
+}
+.bottomnavbar {
+	font-size: 12px;
+	text-align: left;
+
+}
+.otherlinks {
+	line-height: 32px;
+	text-align: center;
+	vertical-align: middle;
+}
+.images {
+	vertical-align: top;
+	text-align: center;
+
+}
+.texttop {
+	vertical-align: top;
+}
+.smallertext {
+	font-size: 12px;
+	line-height: normal;
+}
+.largertext {
+	font-size: 18px;
+	font-weight: bold;
+}
+.jobtitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+.verysmalltext {
+	font-size: 9px;
+	line-height: normal;
+}
+.product {
+
+	font-size: 16px;
+	font-weight: bold;
+}
+.faqtext {
+	font-size: 14px;
+}
+.companyinfo {
+	text-align: center;
+}

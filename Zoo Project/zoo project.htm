@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<TITLE>Zoo Project</TITLE>
+<SCRIPT>
+   imgArray=new Array(10);
+   imgArray[0]=new Image;
+   imgArray[0].src="Giraffe.jpg";
+   imgArray[1]=new Image; 
+   imgArray[1].src="Tiger.jpg"; 
+   imgArray[2]=new Image;
+   imgArray[2].src="Lion.jpg";
+   imgArray[3]=new Image;
+   imgArray[3].src="tortoise.jpg";
+   imgArray[4]=new Image; 
+   imgArray[4].src="rhinos.jpg";
+   imgArray[5]=new Image;
+   imgArray[5].src="Gorilla.jpg";
+   imgArray[6]=new Image;
+   imgArray[6].src="ostrich.jpg";
+   imgArray[7]=new Image;
+   imgArray[7].src="Elephant.jpg";
+   imgArray[8]=new Image; 
+   imgArray[8].src="Panda.jpg";
+   imgArray[9]=new Image 
+   imgArray[9].src="Monkey.jpg";
+   index=0;
+   
+	
+   function doBack()
+   {
+     if(index > 0)
+     {
+       index--; 
+       document.slideshow.src=
+       imgArray[index].src;
+     }
+     return;
+
+    }
+    
+    function doNext()
+    {
+      if(index < 9)
+      {
+
+        index++;
+        document.slideshow.src=
+        imgArray[index].src; 
+      }
+      return
+        }      
+</SCRIPT>
+</HEAD>
+<body background="sunset.jpg">
+<CENTER>
+<H1>My Zoo</H1>
+<P>
+<IMG SRC="giraffe.jpg"
+   NAME="slideshow"
+   WIDTH=400
+   HEIGHT=400>
+<P>
+<H3>
+<A HREF=javascript:doBack()>Back</A>
+&nbsp &nbsp &nbsp
+<A HREF=javascript:doNext()>Next</A>
+</H3>
+</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Activity #10</TITLE>
+<SCRIPT>
+   imgArray=new Array(4);
+   imgArray[0]=new Image;
+   imgArray[0].src="giraffe.gif";
+   imgArray[1]=new Image; 
+   imgArray[1].src="tiger.gif"; 
+   imgArray[2]=new Image;
+   imgArray[2].src="lions.gif";
+   imgArray[3]=new Image;
+   imgArray[3].src="tortoise.gif";
+   imgArray[4]=new Image; 
+   imgArray[4].src="rhinos.gif";
+   imgArray[5]=new Image;
+   imgArray[5].src="gorilla
+   imgArray[6]=new Image;
+   imgArray[6].src="ostrich.gif";
+   imgArray[7]=new Image;
+   imgArray[7].src="elephant.gif
+   index=0;
+   
+	
+   function doBack()
+   {
+     if(index > 0)
+     {
+       index--; 
+       document.slideshow.src=
+       imgArray[index].src;
+     }
+     return;
+
+    }
+    
+    function doNext()
+    {
+      if(index < 3)
+      {
+
+        index++;
+        document.slideshow.src=
+        imgArray[index].src; 
+      }
+      return
+        }      
+</SCRIPT>
+</HEAD>
+<BODY>
+<CENTER>
+<H1>My JavaScript Slide Show</H1>
+<P>
+<IMG SRC="lions.gif"
+   NAME="slideshow"
+   WIDTH=400
+   HEIGHT=200>
+<P>
+<H3>
+<A HREF=javascript:doBack()>Back</A>
+&nbsp &nbsp &nbsp
+<A HREF=javascript:doNext()>Next</A>
+</H3>
+</CENTER>
+</BODY>
+</HTML>

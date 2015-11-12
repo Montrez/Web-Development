@@ -1,0 +1,15 @@
+body {margin: 8pt}
+
+a {text-decoration: none; 
+  color: blue}
+
+p {font-family: Verdana, Garamond; 
+  font-size: 11pt}
+
+th {color: white; 
+  background-color: blue; 
+  font-size: 11pt; 
+  text-align: left}
+
+caption {color: blue; 
+  font-style: italic}
